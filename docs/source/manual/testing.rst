@@ -378,12 +378,12 @@ By creating a DropwizardTestSupport instance in your test you can manually start
                 );
 
         @BeforeClass
-        public void beforeClass() {
+        public static void beforeClass() {
             SUPPORT.before();
         }
 
         @AfterClass
-        public void afterClass() {
+        public static void afterClass() {
             SUPPORT.after();
         }
 
